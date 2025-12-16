@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="Tracker-Web">
+            <div class="Header">
+                <h2 class="p-header">Expense Tracker</h2>
+                <h3>Your Balance</h3>
+                <h3 id="balance">0.00$</h3>
+            </div>
+            <div class="Income-Expense">
+                <div class="Income">
+                    <p>Income</p>
+                    <p id="income">0.00$</p>
+                </div>
+                <div class="Expenses">
+                    <p>Expense</p>
+                    <p id="expense">0.00$</p>
+                </div>
+            </div>
+            <div onclick="" class="Description">
+                <label for="">Description</label>
+                <input type="text" id="description" placeholder="Enter Description">
+                <label for="">Amount(negative for Expenses, positive for income)</label>
+                <input type="text" name="" id="amount" placeholder="Enter amount">
+                <button type="submit" value="submit" onclick="addTransaction()">Add Transaction</button>
+            </div>
+            <div class="Transaction-History">
+                <h2>Transaction History</h2>
+            </div>
+            <table class="table">
+                <tr>
+                    <th class="Date">Date</th>
+                    <th class="Description">Description</th>
+                    <th class="Amount">Amount</th>
+                </tr>
+                <tbody id="history">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
